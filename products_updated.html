@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ShopSphere - Explore our complete collection of products">
+
+    <title>ShopSphere | All Products</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </span>
+
+            <span>
+                Shop<span>Sphere</span>
+            </span>
+
+        </a>
+
+
+        <!-- Navigation -->
+
+        <nav class="nav-menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html" class="active">
+                Products
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#offers">
+                Offers
+            </a>
+
+        </nav>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- Actions -->
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn"
+                id="wishlistButton"
+                title="Wishlist">
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span class="badge"
+                      id="wishlistCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="icon-btn"
+                id="cartButton"
+                title="Shopping Cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="badge"
+                      id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="login-btn"
+                id="loginButton">
+
+                <i class="fa-regular fa-user"></i>
+
+                Login
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="index.html#categories">
+            Categories
+        </a>
+
+        <a href="index.html#offers">
+            Offers
+        </a>
+
+        <button id="mobileLogin">
+            <i class="fa-regular fa-user"></i>
+            Login
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     PAGE HERO
+========================================= -->
+
+<section class="products-hero">
+
+    <div class="container">
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>
+                Products
+            </span>
+
+        </div>
+
+
+        <div class="products-hero-content">
+
+            <span class="section-label">
+                OUR COLLECTION
+            </span>
+
+            <h1>
+                Discover Something
+                <span>Great.</span>
+            </h1>
+
+            <p>
+                Explore our carefully selected collection of
+                fashion, electronics, accessories and more.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PRODUCTS AREA
+========================================= -->
+
+<section class="products-page">
+
+    <div class="container">
+
+
+        <!-- Top Bar -->
+
+        <div class="products-topbar">
+
+            <div>
+
+                <span class="products-count">
+                    Showing
+                    <strong id="showingCount">
+                        12
+                    </strong>
+                    products
+                </span>
+
+            </div>
+
+
+            <!-- Mobile Filter -->
+
+            <button
+                class="mobile-filter-btn"
+                id="mobileFilterBtn">
+
+                <i class="fa-solid fa-sliders"></i>
+
+                Filters
+
+            </button>
+
+
+            <!-- Sort -->
+
+            <div class="sort-box">
+
+                <label for="sortProducts">
+                    Sort by:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="products-layout">
+
+
+            <!-- =================================
+                 FILTER SIDEBAR
+            ================================= -->
+
+            <aside
+                class="filter-sidebar"
+                id="filterSidebar">
+
+
+                <div class="filter-header">
+
+                    <h3>
+                        Filters
+                    </h3>
+
+                    <button
+                        id="clearFilters">
+
+                        Clear All
+
+                    </button>
+
+                </div>
+
+
+                <!-- Category -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Category
+                    </h4>
+
+
+                    <label class="check-option">
+
+                        <input
+                            type="checkbox"
+                            value="fashion"
+                            class="category-filter">
+
+                        <span>
+                            Fashion
+                        </span>
+
+                        <small>
+                            4
+                        </small>
+
+                    </label>
+
+
+                    <label class="check-option">
+
+                        <input
+                            type="checkbox"
+                            value="electronics"
+                            class="category-filter">
+
+                        <span>
+                            Electronics
+                        </span>
+
+                        <small>
+                            4
+                        </small>
+
+                    </label>
+
+
+                    <label class="check-option">
+
+                        <input
+                            type="checkbox"
+                            value="accessories"
+                            class="category-filter">
+
+                        <span>
+                            Accessories
+                        </span>
+
+                        <small>
+                            3
+                        </small>
+
+                    </label>
+
+
+                    <label class="check-option">
+
+                        <input
+                            type="checkbox"
+                            value="home"
+                            class="category-filter">
+
+                        <span>
+                            Home & Living
+                        </span>
+
+                        <small>
+                            1
+                        </small>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- Price -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Price Range
+                    </h4>
+
+
+                    <div class="price-range">
+
+                        <div>
+
+                            <label>
+                                Min
+                            </label>
+
+                            <input
+                                type="number"
+                                id="minPrice"
+                                placeholder="₹0"
+                                min="0"
+                            >
+
+                        </div>
+
+
+                        <span>
+                            —
+                        </span>
+
+
+                        <div>
+
+                            <label>
+                                Max
+                            </label>
+
+                            <input
+                                type="number"
+                                id="maxPrice"
+                                placeholder="₹10,000"
+                                min="0"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Rating -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Rating
+                    </h4>
+
+
+                    <label class="rating-option">
+
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="4"
+                        >
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <span>
+                            4 & above
+                        </span>
+
+                    </label>
+
+
+                    <label class="rating-option">
+
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="3"
+                        >
+
+                        <span class="stars">
+                            ★★★★☆
+                        </span>
+
+                        <span>
+                            3 & above
+                        </span>
+
+                    </label>
+
+
+                    <label class="rating-option">
+
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="2"
+                        >
+
+                        <span class="stars">
+                            ★★★☆☆
+                        </span>
+
+                        <span>
+                            2 & above
+                        </span>
+
+                    </label>
+
+
+                    <label class="rating-option">
+
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="1"
+                        >
+
+                        <span class="stars">
+                            ★★☆☆☆
+                        </span>
+
+                        <span>
+                            1 & above
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- Discount -->
+
+                <div class="filter-group">
+
+                    <h4>
+                        Offers
+                    </h4>
+
+
+                    <label class="check-option">
+
+                        <input
+                            type="checkbox"
+                            id="discountFilter"
+                        >
+
+                        <span>
+                            On Sale
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Apply -->
+
+                <button
+                    class="apply-filter-btn"
+                    id="applyFilters">
+
+                    Apply Filters
+
+                </button>
+
+            </aside>
+
+
+
+            <!-- =================================
+                 PRODUCT CONTENT
+            ================================= -->
+
+            <div class="products-content">
+
+
+                <!-- Product Grid -->
+
+                <div
+                    class="products-grid"
+                    id="productsGrid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="wireless-headphones"
+                        data-category="electronics"
+                        data-name="Wireless Headphones"
+                        data-price="2999"
+                        data-rating="4.5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -25%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder headphones">
+
+                                <i class="fa-solid fa-headphones"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Electronics
+                            </span>
+
+                            <h3>
+                                Wireless Headphones
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                </span>
+
+                                <small>
+                                    (128)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹2,999
+                                    </strong>
+
+                                    <del>
+                                        ₹3,999
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Wireless Headphones">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="premium-cotton-hoodie"
+                        data-category="fashion"
+                        data-name="Premium Cotton Hoodie"
+                        data-price="1599"
+                        data-rating="5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -20%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder hoodie">
+
+                                <i class="fa-solid fa-shirt"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fashion
+                            </span>
+
+                            <h3>
+                                Premium Cotton Hoodie
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★★
+
+                                </span>
+
+                                <small>
+                                    (94)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹1,599
+                                    </strong>
+
+                                    <del>
+                                        ₹1,999
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Premium Cotton Hoodie">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="smart-watch-pro"
+                        data-category="electronics"
+                        data-name="Smart Watch Pro"
+                        data-price="4899"
+                        data-rating="4"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -30%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder smartwatch">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Electronics
+                            </span>
+
+                            <h3>
+                                Smart Watch Pro
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (76)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹4,899
+                                    </strong>
+
+                                    <del>
+                                        ₹6,999
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Smart Watch Pro">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="classic-sneakers"
+                        data-category="fashion"
+                        data-name="Classic Sneakers"
+                        data-price="2549"
+                        data-rating="4.5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -15%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder sneakers">
+
+                                <i class="fa-solid fa-shoe-prints"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fashion
+                            </span>
+
+                            <h3>
+                                Classic Sneakers
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (215)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹2,549
+                                    </strong>
+
+                                    <del>
+                                        ₹2,999
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Classic Sneakers">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="minimalist-sunglasses"
+                        data-category="accessories"
+                        data-name="Minimalist Sunglasses"
+                        data-price="1799"
+                        data-rating="4"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -18%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder sunglasses">
+
+                                <i class="fa-solid fa-glasses"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Accessories
+                            </span>
+
+                            <h3>
+                                Minimalist Sunglasses
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (63)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹1,799
+                                    </strong>
+
+                                    <del>
+                                        ₹2,199
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Minimalist Sunglasses">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 6 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="leather-backpack"
+                        data-category="accessories"
+                        data-name="Leather Backpack"
+                        data-price="2299"
+                        data-rating="5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -22%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder backpack">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Accessories
+                            </span>
+
+                            <h3>
+                                Leather Backpack
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★★
+
+                                </span>
+
+                                <small>
+                                    (142)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹2,299
+                                    </strong>
+
+                                    <del>
+                                        ₹2,949
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Leather Backpack">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 7 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="modern-table-lamp"
+                        data-category="home"
+                        data-name="Modern Table Lamp"
+                        data-price="1299"
+                        data-rating="4"
+                        data-discount="false">
+
+                        <div class="shop-product-image">
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder lamp">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Home & Living
+                            </span>
+
+                            <h3>
+                                Modern Table Lamp
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (52)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹1,299
+                                    </strong>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Modern Table Lamp">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 8 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="portable-bluetooth-speaker"
+                        data-category="electronics"
+                        data-name="Portable Bluetooth Speaker"
+                        data-price="1999"
+                        data-rating="4.5"
+                        data-discount="false">
+
+                        <div class="shop-product-image">
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder speaker">
+
+                                <i class="fa-solid fa-volume-high"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Electronics
+                            </span>
+
+                            <h3>
+                                Portable Bluetooth Speaker
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★★
+
+                                </span>
+
+                                <small>
+                                    (187)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹1,999
+                                    </strong>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Portable Bluetooth Speaker">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 9 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="classic-denim-jacket"
+                        data-category="fashion"
+                        data-name="Classic Denim Jacket"
+                        data-price="2199"
+                        data-rating="4.5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -12%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder jacket">
+
+                                <i class="fa-solid fa-shirt"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fashion
+                            </span>
+
+                            <h3>
+                                Classic Denim Jacket
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (81)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹2,199
+                                    </strong>
+
+                                    <del>
+                                        ₹2,499
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Classic Denim Jacket">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 10 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="premium-leather-wallet"
+                        data-category="accessories"
+                        data-name="Premium Leather Wallet"
+                        data-price="999"
+                        data-rating="4"
+                        data-discount="false">
+
+                        <div class="shop-product-image">
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder wallet">
+
+                                <i class="fa-solid fa-wallet"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Accessories
+                            </span>
+
+                            <h3>
+                                Premium Leather Wallet
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (48)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹999
+                                    </strong>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Premium Leather Wallet">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 11 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="mechanical-keyboard"
+                        data-category="electronics"
+                        data-name="Mechanical Keyboard"
+                        data-price="3499"
+                        data-rating="5"
+                        data-discount="true">
+
+                        <div class="shop-product-image">
+
+                            <span class="discount">
+                                -17%
+                            </span>
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder keyboard">
+
+                                <i class="fa-solid fa-keyboard"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Electronics
+                            </span>
+
+                            <h3>
+                                Mechanical Keyboard
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★★
+
+                                </span>
+
+                                <small>
+                                    (104)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹3,499
+                                    </strong>
+
+                                    <del>
+                                        ₹4,199
+                                    </del>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Mechanical Keyboard">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PRODUCT 12 -->
+
+                    <article
+                        class="shop-product-card"
+                        data-id="minimalist-t-shirt"
+                        data-category="fashion"
+                        data-name="Minimalist T-Shirt"
+                        data-price="799"
+                        data-rating="4"
+                        data-discount="false">
+
+                        <div class="shop-product-image">
+
+                            <button class="wishlist-btn">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <div class="product-placeholder tshirt">
+
+                                <i class="fa-solid fa-shirt"></i>
+
+                            </div>
+
+
+                            <button class="quick-view">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                                Quick View
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Fashion
+                            </span>
+
+                            <h3>
+                                Minimalist T-Shirt
+                            </h3>
+
+
+                            <div class="rating">
+
+                                <span>
+
+                                    ★★★★☆
+
+                                </span>
+
+                                <small>
+                                    (119)
+                                </small>
+
+                            </div>
+
+
+                            <div class="product-bottom">
+
+                                <div class="price">
+
+                                    <strong>
+                                        ₹799
+                                    </strong>
+
+                                </div>
+
+
+                                <button
+                                    class="add-cart"
+                                    data-product="Minimalist T-Shirt">
+
+                                    <i class="fa-solid fa-cart-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- Empty -->
+
+                <div
+                    class="products-empty"
+                    id="productsEmpty">
+
+                    <i class="fa-solid fa-box-open"></i>
+
+                    <h3>
+                        No products found
+                    </h3>
+
+                    <p>
+                        Try changing your filters or search term.
+                    </p>
+
+                    <button id="emptyClearBtn">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+
+
+                <!-- Pagination -->
+
+                <div class="pagination">
+
+                    <button class="page-btn active">
+                        1
+                    </button>
+
+                    <button class="page-btn">
+                        2
+                    </button>
+
+                    <button class="page-btn">
+                        3
+                    </button>
+
+                    <button class="page-btn next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+
+                <span>
+                    Shop<span>Sphere</span>
+                </span>
+
+            </a>
+
+
+            <p>
+                Your destination for quality products,
+                great prices and a better shopping experience.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <a href="products.html">
+                All Products
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#offers">
+                Offers
+            </a>
+
+            <a href="#">
+                New Arrivals
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Help
+            </h3>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © 2026 ShopSphere. All rights reserved.
+            </p>
+
+
+            <div class="payment-icons">
+
+                <i class="fa-brands fa-cc-visa"></i>
+
+                <i class="fa-brands fa-cc-mastercard"></i>
+
+                <i class="fa-brands fa-cc-paypal"></i>
+
+                <i class="fa-solid fa-building-columns"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     TOAST
+========================================= -->
+
+<div class="toast" id="toast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-check"></i>
+
+    </div>
+
+
+    <div>
+
+        <strong id="toastTitle">
+            Added to cart
+        </strong>
+
+        <p id="toastMessage">
+            Product added successfully.
+        </p>
+
+    </div>
+
+
+    <button id="closeToast">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+
+<script src="js/products.js"></script>
+
+</body>
+</html>
