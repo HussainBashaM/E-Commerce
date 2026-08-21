@@ -873,3 +873,41 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+/* =====================================
+   OPEN PRODUCT DETAILS
+===================================== */
+
+document
+    .querySelectorAll(".shop-product-card")
+    .forEach(card => {
+
+        card.addEventListener("click", event => {
+
+            /*
+             * Don't navigate when the user
+             * clicks an action button.
+             */
+
+            if (
+                event.target.closest(".add-cart") ||
+                event.target.closest(".wishlist-btn") ||
+                event.target.closest(".quick-view")
+            ) {
+                return;
+            }
+
+
+            const productId =
+                card.dataset.id;
+
+
+            if (productId) {
+
+                window.location.href =
+                    `product.html?id=${productId}`;
+
+            }
+
+        });
+
+    });
