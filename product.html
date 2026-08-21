@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ShopSphere Product Details">
+
+    <title>ShopSphere | Product</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Product CSS -->
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </span>
+
+            <span>
+                Shop<span>Sphere</span>
+            </span>
+
+        </a>
+
+
+        <!-- Navigation -->
+
+        <nav class="nav-menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html" class="active">
+                Products
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#offers">
+                Offers
+            </a>
+
+        </nav>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- Actions -->
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn"
+                id="wishlistButton"
+                title="Wishlist">
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span
+                    class="badge"
+                    id="wishlistCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="icon-btn"
+                id="cartButton"
+                title="Shopping Cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span
+                    class="badge"
+                    id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="login-btn"
+                id="loginButton">
+
+                <i class="fa-regular fa-user"></i>
+
+                Login
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="index.html#categories">
+            Categories
+        </a>
+
+        <a href="index.html#offers">
+            Offers
+        </a>
+
+        <button id="mobileLogin">
+            <i class="fa-regular fa-user"></i>
+            Login
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     BREADCRUMB
+========================================= -->
+
+<section class="product-breadcrumb">
+
+    <div class="container">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+        <span id="breadcrumbProduct">
+            Product
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PRODUCT DETAILS
+========================================= -->
+
+<main class="product-details-section">
+
+    <div class="container">
+
+        <div class="product-details">
+
+
+            <!-- =================================
+                 PRODUCT GALLERY
+            ================================= -->
+
+            <div class="product-gallery">
+
+                <div class="product-main-image">
+
+                    <span
+                        class="product-discount"
+                        id="productDiscount">
+                        -25%
+                    </span>
+
+
+                    <button
+                        class="product-gallery-wishlist"
+                        id="galleryWishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+
+                    <div
+                        class="main-product-placeholder"
+                        id="mainProductImage">
+
+                        <i class="fa-solid fa-headphones"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Thumbnails -->
+
+                <div class="product-thumbnails">
+
+                    <button class="thumbnail active">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </button>
+
+                    <button class="thumbnail">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </button>
+
+                    <button class="thumbnail">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </button>
+
+                    <button class="thumbnail">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PRODUCT INFORMATION
+            ================================= -->
+
+            <div class="product-information">
+
+
+                <span
+                    class="product-category-label"
+                    id="productCategory">
+                    Electronics
+                </span>
+
+
+                <h1 id="productName">
+                    Wireless Headphones
+                </h1>
+
+
+                <!-- Rating -->
+
+                <div class="product-rating-row">
+
+                    <div
+                        class="product-stars"
+                        id="productStars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <span id="productRating">
+                        4.5
+                    </span>
+
+                    <a href="#reviews">
+                        128 Reviews
+                    </a>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <div class="product-price-row">
+
+                    <strong id="productPrice">
+                        ₹2,999
+                    </strong>
+
+                    <del id="productOldPrice">
+                        ₹3,999
+                    </del>
+
+                    <span id="productSave">
+                        Save ₹1,000
+                    </span>
+
+                </div>
+
+
+                <p
+                    class="product-description"
+                    id="productDescription">
+
+                    Enjoy powerful sound, comfortable design and
+                    long-lasting battery life with these premium
+                    wireless headphones.
+
+                </p>
+
+
+                <!-- Divider -->
+
+                <div class="product-divider"></div>
+
+
+                <!-- Color -->
+
+                <div
+                    class="product-option"
+                    id="colorOption">
+
+                    <div class="option-heading">
+
+                        <strong>
+                            Color:
+                        </strong>
+
+                        <span id="selectedColor">
+                            Black
+                        </span>
+
+                    </div>
+
+
+                    <div class="color-options">
+
+                        <button
+                            class="color-btn active"
+                            data-color="Black"
+                            style="background:#191919;">
+                        </button>
+
+                        <button
+                            class="color-btn"
+                            data-color="White"
+                            style="background:#f3f3f3;">
+                        </button>
+
+                        <button
+                            class="color-btn"
+                            data-color="Blue"
+                            style="background:#526c91;">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Size -->
+
+                <div
+                    class="product-option"
+                    id="sizeOption">
+
+                    <div class="option-heading">
+
+                        <strong>
+                            Size:
+                        </strong>
+
+                        <span id="selectedSize">
+                            Standard
+                        </span>
+
+                    </div>
+
+
+                    <div class="size-options">
+
+                        <button
+                            class="size-btn active"
+                            data-size="Standard">
+
+                            Standard
+
+                        </button>
+
+                        <button
+                            class="size-btn"
+                            data-size="Large">
+
+                            Large
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quantity -->
+
+                <div class="quantity-section">
+
+                    <strong>
+                        Quantity:
+                    </strong>
+
+
+                    <div class="quantity-control">
+
+                        <button id="decreaseQuantity">
+
+                            <i class="fa-solid fa-minus"></i>
+
+                        </button>
+
+                        <span id="quantity">
+                            1
+                        </span>
+
+                        <button id="increaseQuantity">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+
+                <div class="product-actions">
+
+                    <button
+                        class="add-to-cart-btn"
+                        id="addToCart">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                    <button
+                        class="buy-now-btn"
+                        id="buyNow">
+
+                        Buy Now
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Benefits -->
+
+                <div class="product-benefits">
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Free Delivery
+                            </strong>
+
+                            <span>
+                                On orders above ₹999
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Easy Returns
+                            </strong>
+
+                            <span>
+                                7-day return policy
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Secure Payment
+                            </strong>
+
+                            <span>
+                                100% secure checkout
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================
+     PRODUCT INFORMATION TABS
+========================================= -->
+
+<section class="product-info-section">
+
+    <div class="container">
+
+        <div class="info-tabs">
+
+            <button
+                class="info-tab active"
+                data-tab="description">
+
+                Description
+
+            </button>
+
+            <button
+                class="info-tab"
+                data-tab="specifications">
+
+                Specifications
+
+            </button>
+
+            <button
+                class="info-tab"
+                data-tab="reviews">
+
+                Reviews
+
+            </button>
+
+        </div>
+
+
+        <!-- Description -->
+
+        <div
+            class="tab-content active"
+            id="description">
+
+            <h2>
+                Product Description
+            </h2>
+
+            <p id="longDescription">
+
+                Designed for people who want excellent quality
+                without compromising on style or comfort.
+
+            </p>
+
+            <p>
+
+                ShopSphere carefully selects products that combine
+                quality, functionality and modern design. Every
+                product is checked before being added to our
+                collection.
+
+            </p>
+
+        </div>
+
+
+        <!-- Specifications -->
+
+        <div
+            class="tab-content"
+            id="specifications">
+
+            <h2>
+                Specifications
+            </h2>
+
+
+            <div class="specification-table">
+
+                <div>
+                    <span>
+                        Brand
+                    </span>
+
+                    <strong>
+                        ShopSphere
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Material
+                    </span>
+
+                    <strong>
+                        Premium Quality
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Warranty
+                    </span>
+
+                    <strong>
+                        1 Year
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Country
+                    </span>
+
+                    <strong>
+                        India
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Reviews -->
+
+        <div
+            class="tab-content"
+            id="reviews">
+
+            <h2>
+                Customer Reviews
+            </h2>
+
+
+            <div class="reviews-summary">
+
+                <div class="average-rating">
+
+                    <strong id="reviewAverage">
+                        4.5
+                    </strong>
+
+                    <div>
+                        ★★★★★
+                    </div>
+
+                    <span>
+                        Based on customer reviews
+                    </span>
+
+                </div>
+
+
+                <div class="rating-bars">
+
+                    <div>
+                        <span>5</span>
+
+                        <div>
+                            <span style="width:85%"></span>
+                        </div>
+
+                        <small>85%</small>
+                    </div>
+
+
+                    <div>
+                        <span>4</span>
+
+                        <div>
+                            <span style="width:10%"></span>
+                        </div>
+
+                        <small>10%</small>
+                    </div>
+
+
+                    <div>
+                        <span>3</span>
+
+                        <div>
+                            <span style="width:3%"></span>
+                        </div>
+
+                        <small>3%</small>
+                    </div>
+
+
+                    <div>
+                        <span>2</span>
+
+                        <div>
+                            <span style="width:1%"></span>
+                        </div>
+
+                        <small>1%</small>
+                    </div>
+
+
+                    <div>
+                        <span>1</span>
+
+                        <div>
+                            <span style="width:1%"></span>
+                        </div>
+
+                        <small>1%</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-user">
+
+                    <div class="review-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Aman
+                        </strong>
+
+                        <span>
+                            Verified Buyer
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+
+                <p>
+                    Excellent product. The quality is really good
+                    and delivery was fast.
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-user">
+
+                    <div class="review-avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Rahul
+                        </strong>
+
+                        <span>
+                            Verified Buyer
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-stars">
+                    ★★★★☆
+                </div>
+
+
+                <p>
+                    Good value for money. The product looks
+                    premium and works very well.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     RELATED PRODUCTS
+========================================= -->
+
+<section class="related-products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    YOU MAY ALSO LIKE
+                </span>
+
+                <h2>
+                    Related Products
+                </h2>
+
+            </div>
+
+
+            <a
+                href="products.html"
+                class="view-link">
+
+                View All
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div
+            class="related-grid"
+            id="relatedProducts">
+
+            <!-- Filled by JavaScript -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+
+                <span>
+                    Shop<span>Sphere</span>
+                </span>
+
+            </a>
+
+
+            <p>
+                Your destination for quality products,
+                great prices and a better shopping experience.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <a href="products.html">
+                All Products
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#offers">
+                Offers
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Help
+            </h3>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © 2026 ShopSphere. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     TOAST
+========================================= -->
+
+<div class="toast" id="toast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-check"></i>
+
+    </div>
+
+
+    <div>
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <p id="toastMessage">
+            Done successfully.
+        </p>
+
+    </div>
+
+
+    <button id="closeToast">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+
+<script src="js/product.js"></script>
+
+</body>
+</html>
